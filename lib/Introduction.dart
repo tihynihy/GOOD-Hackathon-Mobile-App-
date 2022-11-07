@@ -10,9 +10,6 @@ class IntroductionClass extends StatefulWidget {
 class _IntroductionClassState extends State<IntroductionClass> {
   @override
   Widget build(BuildContext context) {
-    ///**This Entire Code teaches you how to create simple containers, Colums and Rows Including a
-    ///listile. It also designs borders of the containers and all.  */
-
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(

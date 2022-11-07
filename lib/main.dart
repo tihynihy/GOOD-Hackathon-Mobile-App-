@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gitprojects/Introduction.dart';
-import 'package:flutter_gitprojects/Simple_DesignBlog.dart';
+import 'package:flutter_gitprojects/main_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +11,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "flutter tutorial",
       home: Home(),
     );
   }
@@ -30,60 +28,48 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.red,
-        title: Text("Home page"),
-        foregroundColor: Colors.black,
-        centerTitle: true,
-        leading: Icon(
-          Icons.home,
-          size: 22.0,
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 12, 0, 37),
+          title: Text("GOODHackathon Project"),
+          centerTitle: true,
         ),
-        actions: [
-          Icon(Icons.settings),
-          Icon(Icons.edit),
-        ],
-        elevation: 30.0,
-        shadowColor: Colors.green,
-      ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: EdgeInsets.all(30),
-          width: size.width,
-          child: Column(
-            children: [
-              Container(
-                width: size.width,
-                child: MaterialButton(
-                  shape: StadiumBorder(),
-                  onPressed: () {
-                    var route = MaterialPageRoute(
-                        builder: (context) => IntroductionClass());
-                    Navigator.push(context, route);
-                  },
-                  child: Text("Introduction"),
-                  color: Colors.blue,
-                  textColor: Colors.white,
+        body: SingleChildScrollView(
+          child: Container(
+            color: Colors.black,
+            padding: EdgeInsets.all(30),
+            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+            width: size.width,
+            child: Column(
+              children: [
+                Container(
+                  width: 200,
+                  margin: EdgeInsets.fromLTRB(0, 100, 0, 0),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'JMBG',
+                    ),
+                  ),
                 ),
-              ),
-              Container(
-                width: size.width,
-                child: MaterialButton(
-                  shape: StadiumBorder(),
-                  onPressed: () {
-                    var route =
-                        MaterialPageRoute(builder: (context) => DesignBlog());
-                    Navigator.push(context, route);
-                  },
-                  child: Text("Design Blog Class"),
-                  color: Colors.blue,
-                  textColor: Colors.white,
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 100, 0, 0),
+                  width: 250,
+                  height: 50,
+                  child: MaterialButton(
+                    shape: const StadiumBorder(),
+                    onPressed: () {
+                      var route = MaterialPageRoute(
+                          builder: (context) => const DesignBlog());
+                      Navigator.push(context, route);
+                    },
+                    child: const Text("Login"),
+                    color: Colors.blue,
+                    textColor: Colors.white,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-      ),
-    );
+        ));
   }
 }

@@ -1,35 +1,39 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gitprojects/main_page.dart';
 
-class DesignBlog extends StatefulWidget {
-  const DesignBlog({Key? key}) : super(key: key);
 
-  @override
-  State<DesignBlog> createState() => _DesignBlogState();
-}
-
-class _DesignBlogState extends State<DesignBlog> {
-  //**The Entire Code Teaches you simple web blog designs that can be used for your app */
-
+class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
-    return Scaffold(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
         appBar: AppBar(
-          title: Text("Simple Design"),
           centerTitle: true,
-        ),
-        body: ListView(
-          children: [
-            singleBlog(),
-            singleBlog(),
-            singleBlog(),
-            singleBlog(),
+          title: Text('E-Narod'),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_left),
+            onPressed: () {
+              var route = MaterialPageRoute(builder: (context) => DesignBlog());
+              Navigator.push(context, route);
+            },
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.account_circle),
+            ),
           ],
-        ));
+        ),
+        body: secondBlog(),
+      ),
+    );
   }
+}
 
-  Widget singleBlog() {
-    return InkWell(
+Widget secondBlog() {
+  return SingleChildScrollView(
+    child: InkWell(
       onTap: () {},
       child: Card(
         elevation: 5,
@@ -45,7 +49,7 @@ class _DesignBlogState extends State<DesignBlog> {
                 SizedBox(
                   width: 5,
                 ),
-                Text("Obi Somto"),
+                Text("user 2132921"),
                 Expanded(
                     child: Container(
                         alignment: Alignment.bottomRight,
@@ -57,7 +61,7 @@ class _DesignBlogState extends State<DesignBlog> {
               padding: EdgeInsets.all(8),
               width: double.infinity,
               child: Text(
-                "The [child] contained by the container If null, and if the [constraints] are unbounded a\n or also null, the container will expand to fill all available space in its parent, unless the parent provides unbounded constraints",
+                "Ulica koja je najprometnija je trenutno zatvorena zbog cijevi koja je pukla i trenutno nije u funkciji da se saobracaj odvija bezbjedno",
                 style: TextStyle(
                     fontWeight: FontWeight.bold, fontFamily: "Roboto"),
               ),
@@ -65,8 +69,8 @@ class _DesignBlogState extends State<DesignBlog> {
             Container(
               width: double.infinity,
               height: 250,
-              child: Image.asset(
-                "assets/Image/1.jpg",
+              child: Image.network(
+                'https://bosnainfo.ba/wp-content/uploads/2022/07/h550-2-427x285.jpg',
                 fit: BoxFit.fill,
               ),
             ),
@@ -75,50 +79,30 @@ class _DesignBlogState extends State<DesignBlog> {
               padding: EdgeInsets.all(8),
               width: double.infinity,
               child: Text(
-                  "The [child] contained by the container If null, and if the unless the parent provides unbounded constraints"),
+                  "Ulica koja je najprometnija je trenutno zatvorena zbog cijevi koja je pukla i trenutno nije u funkciji da se saobracaj odvija bezbjedno"),
             ),
             Container(
               padding: EdgeInsets.all(8),
               margin: EdgeInsets.symmetric(horizontal: 20),
               width: double.infinity,
-              child: Row(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  action(Icons.thumb_up, 74),
-                  action(Icons.message, 67),
-                  action(Icons.share, 88),
+                  Container(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        print('293193127 just voted!');
+                        print('Total ammount of voters: 2132');
+                      },
+                      child: const Text('Vote'),
+                    ),
+                  ),
                 ],
               ),
             )
           ],
         ),
       ),
-    );
-  }
-
-  Widget action(IconData icon, count) {
-    var color = Colors.black;
-    if (count > 0) {
-      color = Colors.pinkAccent;
-    }
-    return InkWell(
-      onTap: () {
-        setState(() {
-          count = count + 1;
-        });
-      },
-      child: Row(
-        children: [
-          Icon(
-            icon,
-            color: color,
-          ),
-          SizedBox(
-            width: 5,
-          ),
-          Text("${count}")
-        ],
-      ),
-    );
-  }
+    ),
+  );
 }
