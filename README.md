@@ -8,8 +8,8 @@
 ---
 
 ###### A 24-hour hackathon competition that required us to solve one of two problems:
-1. Education
-2. Public Administration
+1. ** Education **
+2. ** Public Administration **
 
 Together with our "ZOI Code-84" team, we came up with a solution that won first place in a competition that had 15 teams and over 50
 competitors from all cities of Bosnia and Herzegovina.
