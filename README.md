@@ -13,7 +13,7 @@
 
 We picked the second topic.
 
-Together with our "ZOI Code-84" team, we came up with a solution that won first place in a competition that had 15 teams and over 50
+Together with my team "ZOI Code-84", we came up with a solution that won first place in a competition that had 15 teams and over 50
 competitors from all cities of Bosnia and Herzegovina.
 
 The application "rijesi.ba" is an application that is based on direct contact with people who can make a change in the local community.
