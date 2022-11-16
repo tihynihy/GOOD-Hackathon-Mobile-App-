@@ -11,6 +11,8 @@
 1. **Education**
 2. **Public Administration**
 
+We picked the second topic.
+
 Together with our "ZOI Code-84" team, we came up with a solution that won first place in a competition that had 15 teams and over 50
 competitors from all cities of Bosnia and Herzegovina.
 
