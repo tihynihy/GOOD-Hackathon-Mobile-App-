@@ -30,5 +30,5 @@ A post that does not have a large number of votes has a limit that lasts for 7 d
 
 The mobile version is for the everyday user who has the possibility to post problems, while the administrative side is the one that receives posts that are trending.
 
-The mobile version is made in ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+The mobile version is made in  ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
