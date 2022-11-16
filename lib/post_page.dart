@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gitprojects/main_page.dart';
+import 'main.dart';
 
 
 class MainScreen extends StatelessWidget {
+  const MainScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

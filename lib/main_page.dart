@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gitprojects/post_page.dart';
 
-import 'Introduction.dart';
 
 class DesignBlog extends StatefulWidget {
   const DesignBlog({Key? key}) : super(key: key);
@@ -96,7 +95,7 @@ class _DesignBlogState extends State<DesignBlog> {
                       shape: StadiumBorder(),
                       onPressed: () {
                         var route = MaterialPageRoute(
-                            builder: (context) => IntroductionClass());
+                            builder: (context) => MainScreen());
                         Navigator.push(context, route);
                       },
                       child: Text("Vote"),
@@ -117,7 +116,7 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.share, 88),
+                  action(Icons.where_to_vote_outlined, 88),
                 ],
               ),
             ),
@@ -180,12 +179,36 @@ class _DesignBlogState extends State<DesignBlog> {
               padding: EdgeInsets.all(8),
               margin: EdgeInsets.symmetric(horizontal: 20),
               width: double.infinity,
-              child: Row(
+              child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  action(Icons.thumb_up, 22),
-                  action(Icons.message, 67),
-                  action(Icons.share, 88),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => MainScreen());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Vote"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => MainScreen());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Otvori objavu"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  action(Icons.where_to_vote_outlined, 42),
                 ],
               ),
             )
@@ -248,12 +271,36 @@ class _DesignBlogState extends State<DesignBlog> {
               padding: EdgeInsets.all(8),
               margin: EdgeInsets.symmetric(horizontal: 20),
               width: double.infinity,
-              child: Row(
+              child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  action(Icons.thumb_up, 74),
-                  action(Icons.message, 67),
-                  action(Icons.share, 88),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => MainScreen());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Vote"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => MainScreen());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Otvori objavu"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  action(Icons.where_to_vote_outlined, 322),
                 ],
               ),
             )
@@ -284,7 +331,7 @@ class _DesignBlogState extends State<DesignBlog> {
                 Expanded(
                     child: Container(
                         alignment: Alignment.bottomRight,
-                        child: Text("Thurs 5.00pm"))),
+                        child: Text("Friday 8.00pm"))),
               ]),
             ),
             Container(
@@ -316,12 +363,36 @@ class _DesignBlogState extends State<DesignBlog> {
               padding: EdgeInsets.all(8),
               margin: EdgeInsets.symmetric(horizontal: 20),
               width: double.infinity,
-              child: Row(
+              child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  action(Icons.thumb_up, 90),
-                  action(Icons.message, 67),
-                  action(Icons.share, 88),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => MainScreen());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Vote"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => MainScreen());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Otvori objavu"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  action(Icons.where_to_vote_outlined, 16),
                 ],
               ),
             )

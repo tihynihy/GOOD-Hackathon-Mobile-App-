@@ -64,6 +64,9 @@ flutter:
   assets:
     - assets\cijev.jpeg
     - assets\zoiLogo.png
+    - assets/whiteLoadScreen.gif
+    - assets/whiteLoadScreen.gif
+    - assets/blueFolder.gif
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
