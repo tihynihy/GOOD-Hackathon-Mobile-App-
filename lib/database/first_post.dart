@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:like_button/like_button.dart';
+import '../main_page.dart';
+import '../user_profile.dart';
 
 class FirstPost extends StatelessWidget {
 
@@ -7,8 +9,33 @@ class FirstPost extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: firstPostWidget(),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_left),
+            onPressed: () {
+              var route = MaterialPageRoute(builder: (context) => DesignBlog());
+              Navigator.push(context, route);
+            },
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {
+                var route = MaterialPageRoute(
+                    builder: (context) => UserProfile());
+                Navigator.push(context, route);
+              },
+              icon: Icon(Icons.account_circle),
+            ),
+          ],
+          title: Text("E-Narod"),
+          centerTitle: true,
+        ),
+
+        body: firstPostWidget(),
+
+      ),
     );
   }
 }
