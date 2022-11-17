@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_gitprojects/main_page.dart';
 

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gitprojects/database/first_post.dart';
 import 'package:flutter_gitprojects/post_page.dart';
+import 'package:flutter_gitprojects/user_profile.dart';
+import 'package:like_button/like_button.dart';
 
 
 class DesignBlog extends StatefulWidget {
@@ -17,7 +20,11 @@ class _DesignBlogState extends State<DesignBlog> {
         appBar: AppBar(
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                var route = MaterialPageRoute(
+                    builder: (context) => UserProfile());
+                    Navigator.push(context, route);
+              },
               icon: Icon(Icons.account_circle),
             ),
           ],
@@ -90,25 +97,17 @@ class _DesignBlogState extends State<DesignBlog> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    child: MaterialButton(
-                      shape: StadiumBorder(),
-                      onPressed: () {
-                        var route = MaterialPageRoute(
-                            builder: (context) => MainScreen());
-                        Navigator.push(context, route);
-                      },
-                      child: Text("Vote"),
-                      color: Colors.blue,
-                      textColor: Colors.white,
-                    ),
+                  LikeButton(
+                    size: 15,
+                    likeCount: 22,
+                    countPostion: CountPostion.bottom,
                   ),
                   Container(
                     child: MaterialButton(
                       shape: StadiumBorder(),
                       onPressed: () {
                         var route = MaterialPageRoute(
-                            builder: (context) => MainScreen());
+                            builder: (context) => FirstPost());
                         Navigator.push(context, route);
                       },
                       child: Text("Otvori objavu"),
@@ -182,18 +181,10 @@ class _DesignBlogState extends State<DesignBlog> {
               child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    child: MaterialButton(
-                      shape: StadiumBorder(),
-                      onPressed: () {
-                        var route = MaterialPageRoute(
-                            builder: (context) => MainScreen());
-                        Navigator.push(context, route);
-                      },
-                      child: Text("Vote"),
-                      color: Colors.blue,
-                      textColor: Colors.white,
-                    ),
+                  LikeButton(
+                    size: 15,
+                    likeCount: 13,
+                    countPostion: CountPostion.bottom,
                   ),
                   Container(
                     child: MaterialButton(
@@ -274,18 +265,10 @@ class _DesignBlogState extends State<DesignBlog> {
               child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    child: MaterialButton(
-                      shape: StadiumBorder(),
-                      onPressed: () {
-                        var route = MaterialPageRoute(
-                            builder: (context) => MainScreen());
-                        Navigator.push(context, route);
-                      },
-                      child: Text("Vote"),
-                      color: Colors.blue,
-                      textColor: Colors.white,
-                    ),
+                  LikeButton(
+                    size: 15,
+                    likeCount: 10,
+                    countPostion: CountPostion.bottom,
                   ),
                   Container(
                     child: MaterialButton(
@@ -366,18 +349,10 @@ class _DesignBlogState extends State<DesignBlog> {
               child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    child: MaterialButton(
-                      shape: StadiumBorder(),
-                      onPressed: () {
-                        var route = MaterialPageRoute(
-                            builder: (context) => MainScreen());
-                        Navigator.push(context, route);
-                      },
-                      child: Text("Vote"),
-                      color: Colors.blue,
-                      textColor: Colors.white,
-                    ),
+                  LikeButton(
+                    size: 15,
+                    likeCount: 9,
+                    countPostion: CountPostion.bottom,
                   ),
                   Container(
                     child: MaterialButton(

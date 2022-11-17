@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gitprojects/main_page.dart';
-import 'main.dart';
+import 'package:flutter_gitprojects/user_profile.dart';
+
 
 
 class MainScreen extends StatelessWidget {
@@ -23,7 +24,11 @@ class MainScreen extends StatelessWidget {
           ),
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                var route = MaterialPageRoute(
+                    builder: (context) => UserProfile());
+                Navigator.push(context, route);
+              },
               icon: Icon(Icons.account_circle),
             ),
           ],
