@@ -3,6 +3,7 @@ import 'package:flutter_gitprojects/database/first_post.dart';
 import 'package:flutter_gitprojects/post_page.dart';
 import 'package:flutter_gitprojects/user_profile.dart';
 import 'package:like_button/like_button.dart';
+import 'package:sidebarx/sidebarx.dart';
 
 
 class DesignBlog extends StatefulWidget {
@@ -28,8 +29,18 @@ class _DesignBlogState extends State<DesignBlog> {
               icon: Icon(Icons.account_circle),
             ),
           ],
-          title: Text("E-Narod"),
+          title: Text("rijesi.ba"),
           centerTitle: true,
+        ),
+        drawer: SidebarX(controller: SidebarXController(selectedIndex: 0),
+        items: const[
+          SidebarXItem(icon: Icons.home),
+          SidebarXItem(icon: Icons.account_box),
+          SidebarXItem(icon: Icons.how_to_vote),
+          SidebarXItem(icon: Icons.bar_chart_outlined),
+          SidebarXItem(icon: Icons.settings),
+          SidebarXItem(icon: Icons.logout),
+          ],
         ),
         body: ListView(
           children: [

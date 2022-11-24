@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:like_button/like_button.dart';
 import '../main_page.dart';
+import '../map_screen.dart';
 import '../user_profile.dart';
 
 class FirstPost extends StatelessWidget {
@@ -106,6 +107,11 @@ Widget firstPostWidget() {
               ],
             ),
           ),
+            SizedBox(
+              width: 300,
+              height: 300,
+              child: MapScreen(),
+            ),
         ],
       ),
     ),
