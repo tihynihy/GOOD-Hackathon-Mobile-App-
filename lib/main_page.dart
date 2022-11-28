@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gitprojects/comment_page.dart';
 import 'package:flutter_gitprojects/database/first_post.dart';
 import 'package:flutter_gitprojects/post_page.dart';
+import 'package:flutter_gitprojects/slider_page.dart';
 import 'package:flutter_gitprojects/user_profile.dart';
 import 'package:like_button/like_button.dart';
 import 'package:sidebarx/sidebarx.dart';
+import 'package:flutter_exit_app/flutter_exit_app.dart';
 
 
 class DesignBlog extends StatefulWidget {
@@ -33,13 +36,15 @@ class _DesignBlogState extends State<DesignBlog> {
           centerTitle: true,
         ),
         drawer: SidebarX(controller: SidebarXController(selectedIndex: 0),
-        items: const[
+        items: [
           SidebarXItem(icon: Icons.home),
           SidebarXItem(icon: Icons.account_box),
           SidebarXItem(icon: Icons.how_to_vote),
           SidebarXItem(icon: Icons.bar_chart_outlined),
           SidebarXItem(icon: Icons.settings),
-          SidebarXItem(icon: Icons.logout),
+          SidebarXItem(icon: Icons.logout, onTap: () {
+            FlutterExitApp.exitApp();
+          }),
           ],
         ),
         body: ListView(
@@ -126,7 +131,20 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.where_to_vote_outlined, 88),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => CommentWidget());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Comments"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  action(Icons.share, 88),
                 ],
               ),
             ),
@@ -197,6 +215,7 @@ class _DesignBlogState extends State<DesignBlog> {
                     likeCount: 13,
                     countPostion: CountPostion.bottom,
                   ),
+
                   Container(
                     child: MaterialButton(
                       shape: StadiumBorder(),
@@ -210,7 +229,20 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.where_to_vote_outlined, 42),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => CommentWidget());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Comments"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  action(Icons.share, 42),
                 ],
               ),
             )
@@ -294,7 +326,20 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.where_to_vote_outlined, 322),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => CommentWidget());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Comments"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  action(Icons.share, 322),
                 ],
               ),
             )
@@ -378,7 +423,20 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.where_to_vote_outlined, 16),
+                  Container(
+                    child: MaterialButton(
+                      shape: StadiumBorder(),
+                      onPressed: () {
+                        var route = MaterialPageRoute(
+                            builder: (context) => CommentWidget());
+                        Navigator.push(context, route);
+                      },
+                      child: Text("Comments"),
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                    ),
+                  ),
+                  action(Icons.share, 16),
                 ],
               ),
             )

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gitprojects/map_screen.dart';
+import 'package:flutter_gitprojects/slider_page.dart';
 import 'package:like_button/like_button.dart';
-import '../main_page.dart';
-import '../map_screen.dart';
 import '../user_profile.dart';
+import 'package:page_transition/page_transition.dart';
+import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+
 
 class FirstPost extends StatelessWidget {
 
@@ -11,13 +14,13 @@ class FirstPost extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           leading: IconButton(
             icon: Icon(Icons.arrow_left),
             onPressed: () {
-              var route = MaterialPageRoute(builder: (context) => DesignBlog());
-              Navigator.push(context, route);
+              Navigator.push(context, PageTransition(child: UserProfile(), type: PageTransitionType.rightToLeft));
             },
           ),
           actions: [
@@ -30,7 +33,7 @@ class FirstPost extends StatelessWidget {
               icon: Icon(Icons.account_circle),
             ),
           ],
-          title: Text("E-Narod"),
+          title: Text("rijesi.ba"),
           centerTitle: true,
         ),
 
@@ -43,8 +46,7 @@ class FirstPost extends StatelessWidget {
 
 
 Widget firstPostWidget() {
-  return InkWell(
-    onTap: () {},
+  return SingleChildScrollView(
     child: Card(
       elevation: 5,
       margin: EdgeInsets.all(5),
@@ -79,39 +81,13 @@ Widget firstPostWidget() {
           Container(
             width: double.infinity,
             height: 250,
-            child: Image.network(
-              'https://storage.radiosarajevo.ba/article/324809/871x540/vik_radovi_facebook.jpg?v1548076008',
-              fit: BoxFit.fill,
-            ),
-          ),
-          Container(
-            color: Colors.grey[200],
-            padding: EdgeInsets.all(8),
-            width: double.infinity,
-            child: Text(
-                "Ulica koja je najprometnija je trenutno zatvorena zbog cijevi koja je pukla i trenutno nije u funkciji da se saobracaj odvija bezbjedno"),
+            child: SliderP(),
           ),
           Container(
             padding: EdgeInsets.all(8),
             margin: EdgeInsets.symmetric(horizontal: 20),
             width: double.infinity,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                LikeButton(
-                  size: 15,
-                  likeCount: 22,
-                  countPostion: CountPostion.bottom,
-                ),
-                action(Icons.where_to_vote_outlined, 88),
-              ],
-            ),
           ),
-            SizedBox(
-              width: 300,
-              height: 300,
-              child: MapScreen(),
-            ),
         ],
       ),
     ),

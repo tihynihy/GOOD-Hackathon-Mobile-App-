@@ -40,6 +40,14 @@ dependencies:
   easy_sidemenu: ^0.4.1
   sidebarx: ^0.14.0
   google_maps_flutter: ^2.2.1
+  comment_box: ^0.0.18
+  flutter_exit_app: ^1.0.5
+  page_transition: ^2.0.9
+  flutter_image_slideshow: ^0.1.4
+  mj_image_slider: ^0.0.7
+  page_slider: ^0.0.2
+  smooth_page_indicator: ^1.0.0+2
+  carousel_slider: ^4.1.1
 
 dev_dependencies:
   flutter_test:
