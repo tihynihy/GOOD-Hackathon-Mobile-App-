@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gitprojects/comment_page.dart';
 import 'package:flutter_gitprojects/post_design.dart';
-import 'package:flutter_gitprojects/post_page.dart';
 import 'package:flutter_gitprojects/user_profile.dart';
 import 'package:like_button/like_button.dart';
 import 'package:sidebarx/sidebarx.dart';
@@ -38,7 +37,12 @@ class _DesignBlogState extends State<DesignBlog> {
         drawer: SidebarX(controller: SidebarXController(selectedIndex: 0),
         items: [
           SidebarXItem(icon: Icons.home),
-          SidebarXItem(icon: Icons.account_box),
+          SidebarXItem(icon: Icons.account_box, onTap: () {
+    var route = MaterialPageRoute(
+    builder: (context) => UserProfile());
+    Navigator.push(context, route);
+    },
+          ),
           SidebarXItem(icon: Icons.how_to_vote),
           SidebarXItem(icon: Icons.bar_chart_outlined),
           SidebarXItem(icon: Icons.settings),
