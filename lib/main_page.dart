@@ -1,12 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gitprojects/comment_page.dart';
-import 'package:flutter_gitprojects/database/first_post.dart';
+import 'package:flutter_gitprojects/post_design.dart';
 import 'package:flutter_gitprojects/post_page.dart';
-import 'package:flutter_gitprojects/slider_page.dart';
 import 'package:flutter_gitprojects/user_profile.dart';
 import 'package:like_button/like_button.dart';
 import 'package:sidebarx/sidebarx.dart';
 import 'package:flutter_exit_app/flutter_exit_app.dart';
+import 'camera_page.dart';
 
 
 class DesignBlog extends StatefulWidget {
@@ -19,7 +20,6 @@ class DesignBlog extends StatefulWidget {
 class _DesignBlogState extends State<DesignBlog> {
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
     return Scaffold(
         appBar: AppBar(
           actions: [
@@ -54,7 +54,14 @@ class _DesignBlogState extends State<DesignBlog> {
             thirdBlog(),
             forthBlog(),
           ],
-        ));
+        ),
+    floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+        Navigator.push(context, CupertinoPageRoute(builder: (context) => const CameraPage()));
+        },
+      label: Icon(Icons.camera_alt_outlined),
+    ),
+    );
   }
 
   Widget singleBlog() {
@@ -123,7 +130,7 @@ class _DesignBlogState extends State<DesignBlog> {
                       shape: StadiumBorder(),
                       onPressed: () {
                         var route = MaterialPageRoute(
-                            builder: (context) => FirstPost());
+                            builder: (context) => PostDesign());
                         Navigator.push(context, route);
                       },
                       child: Text("Otvori objavu"),
@@ -221,7 +228,7 @@ class _DesignBlogState extends State<DesignBlog> {
                       shape: StadiumBorder(),
                       onPressed: () {
                         var route = MaterialPageRoute(
-                            builder: (context) => MainScreen());
+                            builder: (context) => PostDesign());
                         Navigator.push(context, route);
                       },
                       child: Text("Otvori objavu"),
@@ -318,7 +325,7 @@ class _DesignBlogState extends State<DesignBlog> {
                       shape: StadiumBorder(),
                       onPressed: () {
                         var route = MaterialPageRoute(
-                            builder: (context) => MainScreen());
+                            builder: (context) => PostDesign());
                         Navigator.push(context, route);
                       },
                       child: Text("Otvori objavu"),
@@ -415,7 +422,7 @@ class _DesignBlogState extends State<DesignBlog> {
                       shape: StadiumBorder(),
                       onPressed: () {
                         var route = MaterialPageRoute(
-                            builder: (context) => MainScreen());
+                            builder: (context) => PostDesign());
                         Navigator.push(context, route);
                       },
                       child: Text("Otvori objavu"),

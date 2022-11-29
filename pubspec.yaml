@@ -48,6 +48,8 @@ dependencies:
   page_slider: ^0.0.2
   smooth_page_indicator: ^1.0.0+2
   carousel_slider: ^4.1.1
+  flutter_camera: ^0.1.1
+  intl_phone_number_input: ^0.7.1
 
 dev_dependencies:
   flutter_test:

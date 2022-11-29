@@ -4,6 +4,7 @@
 //rijesi.ba - mobile version
 
 import 'package:flutter/material.dart';
+import 'package:flutter_gitprojects/phone_number_auth.dart';
 import 'login.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: PhoneAuth(),
     );
   }
 }
