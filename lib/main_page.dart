@@ -7,6 +7,7 @@ import 'package:like_button/like_button.dart';
 import 'package:sidebarx/sidebarx.dart';
 import 'package:flutter_exit_app/flutter_exit_app.dart';
 import 'camera_page.dart';
+import 'package:share/share.dart';
 
 
 class DesignBlog extends StatefulWidget {
@@ -155,7 +156,9 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.share, 88),
+                  IconButton(onPressed: () {
+                    Share.share('https://www.klix.ba/biznis/studenti-kreirali-rjesenja-za-unapredjenje-zivota-u-lokalnim-zajednicama/221018093');
+                  }, icon: Icon(Icons.share),)
                 ],
               ),
             ),
@@ -253,7 +256,9 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.share, 42),
+                  IconButton(onPressed: () {
+                    Share.share('https://www.klix.ba/biznis/studenti-kreirali-rjesenja-za-unapredjenje-zivota-u-lokalnim-zajednicama/221018093');
+                  }, icon: Icon(Icons.share),)
                 ],
               ),
             )
@@ -350,7 +355,9 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.share, 322),
+                  IconButton(onPressed: () {
+                    Share.share('https://www.klix.ba/biznis/studenti-kreirali-rjesenja-za-unapredjenje-zivota-u-lokalnim-zajednicama/221018093');
+                  }, icon: Icon(Icons.share),)
                 ],
               ),
             )
@@ -447,7 +454,9 @@ class _DesignBlogState extends State<DesignBlog> {
                       textColor: Colors.white,
                     ),
                   ),
-                  action(Icons.share, 16),
+                  IconButton(onPressed: () {
+                    Share.share('https://www.klix.ba/biznis/studenti-kreirali-rjesenja-za-unapredjenje-zivota-u-lokalnim-zajednicama/221018093');
+                  }, icon: Icon(Icons.share),)
                 ],
               ),
             )
