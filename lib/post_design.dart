@@ -4,6 +4,7 @@ import 'package:flutter_gitprojects/slider_page.dart';
 import 'package:like_button/like_button.dart';
 import 'user_profile.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:share/share.dart';
 
 
 
@@ -129,7 +130,9 @@ Widget firstPostWidget(BuildContext context) {
                   ),
                 ),
                 SizedBox(width: 30),
-                action(Icons.share, 88),
+               IconButton(onPressed: () {
+                 Share.share('https://www.klix.ba/biznis/studenti-kreirali-rjesenja-za-unapredjenje-zivota-u-lokalnim-zajednicama/221018093');
+               }, icon: Icon(Icons.share),)
               ],
             ),
           ),

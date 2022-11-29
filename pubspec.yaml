@@ -50,6 +50,8 @@ dependencies:
   carousel_slider: ^4.1.1
   flutter_camera: ^0.1.1
   intl_phone_number_input: ^0.7.1
+  flutter_share: ^2.0.0
+  share: ^2.0.4
 
 dev_dependencies:
   flutter_test:
