@@ -1,6 +1,9 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_camera/flutter_camera.dart';
+import 'package:flutter_gitprojects/main_page.dart';
+import 'package:flutter_gitprojects/fast_form_template.dart';
+import 'package:page_transition/page_transition.dart';
 
 class CameraPage extends StatefulWidget {
   const CameraPage({Key? key}) : super(key: key);
@@ -22,7 +25,29 @@ class _CameraPageState extends State<CameraPage> {
               context: context,
               builder: (context) {
                 return AlertDialog(
-                  content: Image.file(File(path)),
+                  content: Container(
+                    height: 570,
+                    child: Column(
+                      children: [
+                        Image.file(File(path)),
+                        Container(
+                          margin: EdgeInsets.fromLTRB(20, 10, 0, 0),
+                          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                          child: Row(
+                            children: [
+                              ElevatedButton(onPressed: () {
+                                Navigator.push(context, PageTransition(child: FastFormWidget(), type: PageTransitionType.rightToLeft));
+                              }, child: Text('Report')),
+                              SizedBox(width: 100,),
+                              ElevatedButton(onPressed: () {
+                                Navigator.push(context, PageTransition(child: MainPage(), type: PageTransitionType.rightToLeft));
+                              }, child: Text('Abort')),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 );
               });
         }

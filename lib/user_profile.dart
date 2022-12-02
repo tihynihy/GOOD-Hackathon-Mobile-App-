@@ -14,7 +14,7 @@ class UserProfile extends StatelessWidget {
           leading: IconButton(
             icon: Icon(Icons.arrow_left),
             onPressed: () {
-              Navigator.push(context, PageTransition(child: DesignBlog(), type:PageTransitionType.rightToLeft));
+              Navigator.push(context, PageTransition(child: MainPage(), type:PageTransitionType.rightToLeft));
             },
           ),
           title: Text("rijesi.ba"),

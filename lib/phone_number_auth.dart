@@ -97,7 +97,7 @@ class _PhoneNumAuthenticationState extends State<PhoneNumAuthentication> {
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context)=>const DesignBlog()),
+                  MaterialPageRoute(builder: (context)=>const MainPage()),
                 );
               },
               child: Text('Validate'),

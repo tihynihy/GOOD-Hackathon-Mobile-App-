@@ -10,14 +10,14 @@ import 'camera_page.dart';
 import 'package:share/share.dart';
 
 
-class DesignBlog extends StatefulWidget {
-  const DesignBlog({Key? key}) : super(key: key);
+class MainPage extends StatefulWidget {
+  const MainPage({Key? key}) : super(key: key);
 
   @override
-  State<DesignBlog> createState() => _DesignBlogState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _DesignBlogState extends State<DesignBlog> {
+class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

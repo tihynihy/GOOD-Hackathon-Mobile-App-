@@ -195,6 +195,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  flutter_fast_forms:
+    dependency: "direct main"
+    description:
+      name: flutter_fast_forms
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "9.0.0"
   flutter_image_slideshow:
     dependency: "direct main"
     description:
