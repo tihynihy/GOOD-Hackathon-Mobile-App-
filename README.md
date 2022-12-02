@@ -17,7 +17,7 @@ Together with my team "ZOI Code-84", we came up with a solution that won first p
 competitors from all cities of Bosnia and Herzegovina.
 
 <div id="header"  align="center">
-<img src="https://user-images.githubusercontent.com/76163793/205338106-c19004f5-86c5-4f24-a22c-779c8a7c4705.png" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/76163793/205338106-c19004f5-86c5-4f24-a22c-779c8a7c4705.png" width="500" height="500">
 </div>
 
 The application "rijesi.ba" is an application that is based on direct contact with people who can make a change in the local community.
