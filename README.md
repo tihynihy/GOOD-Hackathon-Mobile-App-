@@ -40,7 +40,7 @@ The mobile version is for the everyday user who has the possibility to post prob
 
 The mobile version is made in  ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
-The video presentation of the project is here [![<LinkedIn>](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nihad-jusovi%C4%87-16788a226/)
+The video presentation of the project is here [![<LinkedIn>](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/nihad-jusovi%C4%87-16788a226_team-design-work-activity-7004490676474114048-J_QB?utm_source=share&utm_medium=member_desktop)
 
 
 
