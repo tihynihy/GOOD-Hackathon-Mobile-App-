@@ -28,6 +28,10 @@ When a post reaches a certain number of votes, that post is filtered and becomes
 When a post is automatically selected in the feed, it is sent to the administration or people who have a great influence on the community and goes further through the protocol.
 A post that does not have a large number of votes has a limit that lasts for 7 days. In the course of 7 days, if it is not separated into a trending group, it is considered a problem that does not pose a great risk to the community.
 
+<div id="header"  align="center">
+<img src="https://user-images.githubusercontent.com/76163793/205338149-21411d4e-faa2-4d27-8d4a-e283e4bc469e.jpeg" width="300" height="300">
+</div>
+
 ###### The application consists of two parts:
 - Mobile version (Daily user)
 - Desktop version (Administration)
