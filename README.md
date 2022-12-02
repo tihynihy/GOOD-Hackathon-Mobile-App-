@@ -16,6 +16,10 @@ We picked the second topic.
 Together with my team "ZOI Code-84", we came up with a solution that won first place in a competition that had 15 teams and over 50
 competitors from all cities of Bosnia and Herzegovina.
 
+<div id="header"  align="center">
+<img src="https://user-images.githubusercontent.com/76163793/205338106-c19004f5-86c5-4f24-a22c-779c8a7c4705.png" width="500" height="300">
+</div>
+
 The application "rijesi.ba" is an application that is based on direct contact with people who can make a change in the local community.
 The application has a similar structure to social networks, but its function is to publish everyday problems that arise in a local community.
 Examples are: garbage that is not bought for days on the street, a collapsed house that can potentially cause damage to the environment, pipes that have burst, problems with parking, etc.
@@ -33,5 +37,5 @@ The mobile version is for the everyday user who has the possibility to post prob
 The mobile version is made in  ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
 
-//insert images here 
+
 
