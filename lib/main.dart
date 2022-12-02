@@ -30,20 +30,21 @@ class _SplashPageState extends State<SplashPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: EasySplashScreen(
-          logo: Image.network(
-              'https://media.istockphoto.com/id/1168197884/vector/letter-r-design-vector-in-blue-green-gradient.jpg?s=612x612&w=0&k=20&c=o57Iw4jLZZd_pd7Y-MWzZYACdHwSOPNnZ3sJOm4TVb0='),
-          title: Text(
-            "Rijesi.ba",
-            style: TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
+        body: Center(
+          child: Container(
+            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+            height: 1500,
+            child: EasySplashScreen(
+              logoWidth: 150,
+              logo: Image.network(
+                  'https://media.istockphoto.com/id/1168197884/vector/letter-r-design-vector-in-blue-green-gradient.jpg?s=612x612&w=0&k=20&c=o57Iw4jLZZd_pd7Y-MWzZYACdHwSOPNnZ3sJOm4TVb0='),
+              backgroundColor: Colors.white,
+              showLoader: true,
+              loaderColor: Colors.blue,
+              navigator: PhoneAuth(),
+              durationInSeconds: 7,
             ),
           ),
-          backgroundColor: Colors.white,
-          showLoader: true,
-          navigator: PhoneAuth(),
-          durationInSeconds: 7,
         ),
       ),
 
