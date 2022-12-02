@@ -41,7 +41,3 @@ The mobile version is for the everyday user who has the possibility to post prob
 The mobile version is made in  ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
 
-<video width="400" height="600" controls>
-<source src="https://user-images.githubusercontent.com/76163793/205342087-6ae097fb-b116-4d68-88b9-359f16a0c088.mp4" type="video/mp4">
-</video>
-
